@@ -16,10 +16,6 @@ app.get('/', function(req, res, next) {
   });
 });
 
-app.get('/ron', function(req, res, next) {
-  res.send("Look, Ron. Docker!");
-});
-
 http.createServer(app).listen(process.env.PORT || 3000, function() {
   console.log('Listening on port ' + (process.env.PORT || 3000));
 });
